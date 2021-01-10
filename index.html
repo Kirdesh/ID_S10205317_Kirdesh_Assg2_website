@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+    <head>
+        <title>APOD</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    </head>
+    <body style="background-image: url('https://i.redd.it/ccr5twxy5sv01.jpg');">
+        <header class="row">
+            <nav class="indigo darken-4">
+                <div class="nav-wrapper">
+                    <div class="col s12">
+                        <a href="#" class="brand-logo" style="color:#fffc00;">Explore the Space World</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <main>
+                <section>
+                    <h1 class="center-align" style="color:rgb(255, 255, 255);font-family:'Alfa Slab One', cursive;;">Space Picture of the Day</h1>
+                    <div class="row">
+                        <div class="col s12 m10 offset-m1">
+                            <div id="apod" class="card">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <aside>
+                    <h2 class="center-align" style="color:rgb(255, 255, 255);font-family:'Alfa Slab One', cursive;;">Astroid Tracking</h2>
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input type="text" id="start" class="datepicker">
+                                <label for="start" style="color: rgb(115, 255, 0);">Choose a Date</label>
+                            </div>
+                        </div>
+                    </form>
+                    <table id="trackingTable" class="striped hide">
+                        <thead>
+                            <tr style="background-color: rgba(0, 255, 255, 0.705);">
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Dangerous</th>
+                                <th>Magnitude</th>
+                                <th>Min diametere(km)</th>
+                                <th>Max diametere(km)</th>
+                                <th>Miss Distance(km)</th>
+                                <th>Approach Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tracking" style="background-color: rgba(255, 82, 212, 0.726);">
+                            
+                        </tbody>
+                    </table>
+                </aside>
+            </main>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="nasa.js"></script>
+    </body>
+</html>
