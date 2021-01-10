@@ -87,3 +87,5 @@ Bugs - The astroid data is popping up a bit late however, i think that it is jus
 - I received inspiration for this project a youtuber called Mike Cuddy (https://www.youtube.com/watch?v=_DIxJRKApOg)
 
 ### Link to webpage
+
+https://kirdesh.github.io/ID_S10205317_Kirdesh_Assg2_website/
